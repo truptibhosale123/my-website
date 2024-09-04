@@ -1,0 +1,35 @@
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scroll bars */
+  }
+.home-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./Images/HomePage.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .welcome-message {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left:250px;
+  }
+  
+  .welcome-message h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-message p {
+    font-size: 1.5rem;
+  }

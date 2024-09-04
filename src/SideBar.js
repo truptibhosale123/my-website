@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Sidebar.css'; // We'll style the sidebar later
 
 function SideBar() {
+
   return (
     <div className="sidebar">
       <ul>
