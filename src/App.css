@@ -1,7 +1,6 @@
 .App {
-  text-align: center;
+  display: flex;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +25,22 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+  background-color: #ecf0f1;
+}
+
+.sidebar h3 a {
+  color: #ecf0f1; /* White color */
+  text-decoration: none;
+}
+
+.sidebar h3 a:hover {
+  color: #fff;
 }
 
 @keyframes App-logo-spin {
