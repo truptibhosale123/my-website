@@ -35,16 +35,13 @@ html, body {
     }
   
     .welcome-message h1 {
+      flex-direction: column;
       font-size: 1.5rem;
     }
   
     .welcome-message p {
+        flex-direction: column;
       font-size: 1rem;
     }
   
-    .quote {
-      top: 10px;
-      width: 100%;
-      font-size: 1em;
-    }
   }

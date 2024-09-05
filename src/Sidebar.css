@@ -34,3 +34,16 @@
   padding-left: 10px;
   transition: 0.3s;
 }
+
+/* Adjust sidebar for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Reduce the width on tablets and smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 150px; /* Further reduce the width on mobile devices */
+  }
+}
