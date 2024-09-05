@@ -1,29 +1,32 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import SideBar from './SideBar';
-import Mountaineering from './Mountaineering';
-import TrailRunning from './TrailRunning';
-import Contact from './Contact';
-import About from './About';
+import {TrailRunning , Blogs} from './pages/TrailRunning';
+import {Mountaineering, MBlogs, Gallery} from './pages/Mountaineering';
+import Contact from './pages/Contact';
+import About from './pages/About';
 import Home from './Home';
-import Topnavbar from './Topnavbar';
+
+import Sidebar from './pages/Sidebar';
 
 function App() {
   return (
 <Router>
-    <div className="App">
-      <Topnavbar />
-
+    <div>
+      {/* <Topnavbar /> */}
+      <Sidebar />
       <div className="content">
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/my-website" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/mountaineering" element={<Mountaineering />} />
-        <Route path="/trailrunning" element={<TrailRunning />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/mountaineering" element={<Mountaineering />} /> 
+      <Route path="/mountaineering/blogs" element={<MBlogs />} /> 
+      <Route path="/mountaineering/gallery" element={<Gallery />} /> 
+      <Route path="/trailrunning" element={<TrailRunning />} />
+      <Route path="/trailrunning/blogs" element={<Blogs />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>
     </div>

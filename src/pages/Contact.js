@@ -2,9 +2,9 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div>
-      <h2>Contact</h2>
-      <p>This is the Contact section.</p>
+    <div className='heading'>
+      <h1>Contact</h1>
+
     </div>
   );
 }
