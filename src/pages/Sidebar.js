@@ -4,6 +4,8 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { IconContext } from 'react-icons/lib';
 import { Link } from "react-router-dom";
+import { SidebarData } from "./SidebarData";
+import Submenu from "./Submenu";
 
 const Nav = styled.div`
     background-color : black;
@@ -47,19 +49,16 @@ function Sidebar() {
 
     return (
         <>
-            <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
+            <IconContext.Provider value={{ color: "white", size: "1.5rem" }}>
                 <Nav>
                     <NavIcon>
                         <FaIcons.FaBars onClick={showSidebar} />
-
-
-
                     </NavIcon>
 
                     <h1 style={{
                         textAlign: "center",
                         color: "white",
-                        marginLeft: "50px"
+                        marginLeft: "280px"
                     }
 
                     }>
@@ -72,6 +71,9 @@ function Sidebar() {
                         <NavIcon>
                             <AiIcons.AiOutlineClose onClick={showSidebar} />
                         </NavIcon>
+                        {SidebarData.map((item, index) => {
+                            return <Submenu item={item} index={index}/>
+                        })}
                     </SidebarWrap>
                 </SidebarNav>
 

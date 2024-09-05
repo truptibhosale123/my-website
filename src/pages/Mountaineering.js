@@ -3,7 +3,7 @@ import React from 'react';
 export const Mountaineering = () => {
   return (
     <div className='heading'>
-      <h1>Mountaineering</h1>
+      <h2>Mountaineering</h2>
 
     </div>
   );
@@ -12,7 +12,7 @@ export const Mountaineering = () => {
 export const MBlogs = () => {
   return(
     <div className='heading'>
-       <h1>Mountaineering Blogs</h1>
+       <h2>Mountaineering Blogs</h2>
 
     </div>
   );
@@ -21,7 +21,7 @@ export const MBlogs = () => {
 export const Gallery = () => {
   return(
     <div className='heading'>
-       <h1>Mountaineering Gallery</h1>
+       <h2>Mountaineering Gallery</h2>
 
     </div>
   );
