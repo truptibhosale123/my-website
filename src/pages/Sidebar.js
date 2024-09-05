@@ -59,7 +59,7 @@ function Sidebar() {
                     <h1 style={{
                         textAlign: "center",
                         color: "white",
-                        marginLeft: "200px"
+                        marginLeft: "50px"
                     }
 
                     }>
