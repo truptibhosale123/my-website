@@ -7,12 +7,13 @@ import TrailRunning from './TrailRunning';
 import Contact from './Contact';
 import About from './About';
 import Home from './Home';
+import Topnavbar from './Topnavbar';
 
 function App() {
   return (
 <Router>
     <div className="App">
-      <SideBar />
+      <Topnavbar />
 
       <div className="content">
       <Routes>

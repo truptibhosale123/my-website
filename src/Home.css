@@ -4,7 +4,7 @@ html, body {
     overflow: hidden; /* Prevent scroll bars */
   }
   .home-container {
-    
+    padding-top: 60px;
     height: 100vh;
     width: 100vw;
     display: flex;
