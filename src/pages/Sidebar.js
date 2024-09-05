@@ -55,15 +55,16 @@ function Sidebar() {
                         <FaIcons.FaBars onClick={showSidebar} />
                     </NavIcon>
 
-                    <h1 style={{
+                    <h2 style={{
                         textAlign: "center",
                         color: "white",
-                        marginLeft: "20px"
+                        marginLeft: "50px",
+                        fontSize: "1.2rem"
                     }
 
                     }>
                         Trupti Bhosale
-                    </h1>
+                    </h2>
                 </Nav>
 
                 <SidebarNav sidebar={sidebar}>
