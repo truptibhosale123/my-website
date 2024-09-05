@@ -3,7 +3,8 @@ html, body {
     margin: 0; /* Remove default margin */
     overflow: hidden; /* Prevent scroll bars */
   }
-.home-container {
+  .home-container {
+    
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -12,24 +13,38 @@ html, body {
     background-image: url('./Images/HomePage.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #fff;
     text-align: center;
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
   }
   
   .welcome-message {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-    margin-left:250px;
   }
   
-  .welcome-message h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      padding: 10px;
+    }
   
-  .welcome-message p {
-    font-size: 1.5rem;
+    .welcome-message h1 {
+      font-size: 1.5rem;
+    }
+  
+    .welcome-message p {
+      font-size: 1rem;
+    }
+  
+    .quote {
+      top: 10px;
+      width: 100%;
+      font-size: 1em;
+    }
   }
