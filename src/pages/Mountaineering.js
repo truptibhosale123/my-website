@@ -9,15 +9,6 @@ export const Mountaineering = () => {
   );
 }
 
-export const MBlogs = () => {
-  return(
-    <div className='heading'>
-       <h2>Mountaineering Blogs</h2>
-
-    </div>
-  );
-}
-
 export const Gallery = () => {
   return(
     <div className='heading'>

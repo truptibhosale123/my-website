@@ -1,0 +1,52 @@
+/* BlogList.css */
+/* Apply the background image to the body to cover the full page */
+body {
+    background-image: url('../Images/bloglist.jpg'); /* Path to your image */
+    background-size: cover;   /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents tiling of the background */
+    background-color: rgba(255, 255, 255, 0.9); /* Light overlay for readability */
+    min-height: 100vh; /* Ensures the background covers the full viewport height */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Specific styling for the BlogList grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px; /* Rounded corners for the grid container */
+  }
+  
+  .blog-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Regular shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .blog-card h3 {
+    font-size: 1.4em;
+    color: #0077b6; /* Add a blue tone to the title */
+    margin-bottom: 10px;
+  }
+  
+  .blog-card:hover {
+    transform: scale(1.2); /* Enlarge the card by 20% */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow for more depth */
+    z-index: 10; /* Elevate the card over other elements */
+  }
+  
+  .blog-card:active {
+    transform: scale(1.15); /* Slightly reduce the scale when clicked */
+  }

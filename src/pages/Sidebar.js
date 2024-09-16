@@ -46,6 +46,9 @@ function Sidebar() {
     const showSidebar = () => {
         setsidebar(!sidebar);
     }
+    const closeSidebar = () => {
+        setsidebar(false); // This will close the sidebar
+    };
 
     return (
         <>
@@ -67,7 +70,7 @@ function Sidebar() {
                     </h2>
                 </Nav>
 
-                <SidebarNav sidebar={sidebar}>
+                <SidebarNav sidebar={sidebar} onClick={closeSidebar}>
                     <SidebarWrap>
                         <NavIcon>
                             <AiIcons.AiOutlineClose onClick={showSidebar} />

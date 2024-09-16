@@ -2,10 +2,11 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {TrailRunning , Blogs} from './pages/TrailRunning';
-import {Mountaineering, MBlogs, Gallery} from './pages/Mountaineering';
+import {Mountaineering, Gallery} from './pages/Mountaineering';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Home from './Home';
+import MBlogs from './components/MBlogs';
 
 import Sidebar from './pages/Sidebar';
 
