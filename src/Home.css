@@ -28,7 +28,7 @@ html, body {
   }
   
   /* Responsive styles for smaller screens */
-  @media (max-width: 768px) {
+  @media (max-width: 400px) {
     .home-container {
       flex-direction: column;
       padding: 10px;

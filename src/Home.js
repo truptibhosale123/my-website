@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
+import Header from './components/Header';
 
 function Home() {
     const [quote, setQuote] = useState('');
@@ -23,6 +24,7 @@ function Home() {
 
     return (
         <div className="home-container">
+            <Header/>
             <div className="welcome-message">
                 <h1>Welcome to My Adventure Space!</h1>
                 <p>Let's embark on a journey to explore the exhilarating worlds of mountaineering and trail running.</p>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Blogs.css';
+import Header from "./Header";
 
 export default function MBlogs(){
     const blogs = [
@@ -9,7 +10,9 @@ export default function MBlogs(){
       ];
         
         return (
+            
             <div className="grid-container">
+                <Header/>
               {blogs.map(blog => (
                 <Link to={`/blogs/${blog.id}`} key={blog.id} className="blog-card">
                   <h3>{blog.title}</h3>
