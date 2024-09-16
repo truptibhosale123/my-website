@@ -105,7 +105,8 @@ const ToggleButton = styled.div`
     z-index: 15;
     margin-top:60px;
     background-color:black; 
-     padding: 10px; 
+    padding: 10px; 
+    color:white;
 `;
 
 function Sidebar() {
@@ -117,18 +118,11 @@ function Sidebar() {
 
     return (
         <>
-            <IconContext.Provider value={{color:"red" , size: "1rem"}}>
+            <IconContext.Provider value={{ size: "1rem"}}>
                 <SidebarNav isOpen={isOpen}>
                     <SidebarWrap>
                         <NavIcon>
-                            <h2 style={{
-                                textAlign: "center",
-                                color: "white",
-                                marginLeft: "45px",
-                                fontSize: "1rem"
-                            }}>
-                                Trupti Bhosale
-                            </h2>
+
                         </NavIcon>
 
                         {SidebarData.map((item, index) => {
@@ -137,7 +131,7 @@ function Sidebar() {
                     </SidebarWrap>
                 </SidebarNav>
 
-                <ToggleButton onClick={handleToggle}>
+                <ToggleButton onClick={handleToggle} >
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </ToggleButton>
             </IconContext.Provider>
