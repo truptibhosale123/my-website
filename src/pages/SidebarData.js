@@ -11,7 +11,7 @@ export const SidebarData = [
     },
     {
         title: "Mountaineering",
-        path: "mountaineering",
+        path: "",
         icon: <FaIcons.FaMountain />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
