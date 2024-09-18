@@ -46,7 +46,7 @@ const ToggleButton = styled.div`
 `;
 
 function Sidebar() {
-    const [isopen, setIsopen] = useState(true);
+    const [isopen, setIsopen] = useState(false);
 
     const handleToggle = () => {
         setIsopen(!isopen);
