@@ -5,14 +5,14 @@ import Header from "./Header";
 
 export default function MBlogs(){
     const blogs = [
-        { id: 1, title: "First Blog", summary: "This is a short summary of the first blog" },
-        { id: 2, title: "Second Blog", summary: "This is a short summary of the second blog" },
+        { id: 1, title: "Why climb a mountain?", summary: "Because it is there......" },
+        { id: 2, title: "What is mountaineering?", summary: "Maybe....just climb a mountain? NO!" },
       ];
         
         return (
             
             <div className="grid-container">
-                <Header/>
+                <Header>What would you like to read?</Header>
               {blogs.map(blog => (
                 <Link to={`/blogs/${blog.id}`} key={blog.id} className="blog-card">
                   <h3>{blog.title}</h3>

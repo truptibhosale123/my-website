@@ -7,6 +7,8 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Home from './Home';
 import MBlogs from './components/MBlogs';
+import Blog1 from './components/Blog1';
+
 
 import Sidebar from './pages/Sidebar';
 
@@ -28,6 +30,7 @@ function App() {
       <Route path="/trailrunning/blogs" element={<Blogs />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/blogs/1" element={<Blog1 />} />
       </Routes>
       </div>
     </div>

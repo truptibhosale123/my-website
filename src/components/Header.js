@@ -20,10 +20,10 @@ const HeaderText = styled.h1`
     font-size: 1.5rem; /* Adjust font size as needed */
 `;
 
-function Header() {
+function Header({children}) {
     return (
         <HeaderContainer>
-            <HeaderText></HeaderText>
+            <HeaderText>{children}</HeaderText>
         </HeaderContainer>
     );
 }
